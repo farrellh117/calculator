@@ -17,8 +17,8 @@ body {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 500px;
     height: 700px;
     padding: 30px;
@@ -38,13 +38,60 @@ body {
     padding: 20px;
 }
 
+#operation-display {
+    flex: 1;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: right;
+}
+
+#result-display {
+    flex: 2;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 55px;
+    text-align: right;
+    font-weight: bold;
+}
+
 .numpad {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    flex-direction: column;
     gap: 10px;
     flex: 2;
     width: 100%;
+}
+
+.clear-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.clear-container button {
+    flex: 1;
+    min-height: 60px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clear {
+    background: #E4004B;
+    color: #FFFFFF;
+}
+
+#delete {
+    background: #FFFFFF;
+    color: #E4004B;
+}
+
+.bottom-numpad {
+    flex: 1;
+    display: flex;
+    gap: 10px;
 }
 
 .number-container {
@@ -57,11 +104,14 @@ body {
 .number-container button {
     flex: 1 1 calc(33.333% - 10px);
     min-height: 60px;
-    border: none;
+    background: #444444;
+    color: #FFFFFF;
     border-radius: 8px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
 }
+
 .operator-container {
     flex: 1;
     display: flex;
@@ -72,8 +122,19 @@ body {
 .operator-container button {
     flex: 1;
     min-height: 60px;
-    border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
+}
+
+.operator {
+    background: #ED775A;
+    color: #FFFFFF;
+}
+
+#equal {
+    background-color: #3cd380;
+    color: #FFFFFF;
+    font-weight: bolder;
 }
