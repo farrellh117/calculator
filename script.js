@@ -46,7 +46,7 @@ function backspace() {
 
 function clearDisplay() {
     calcDisplay.innerHTML = "";
-    resultDisplay.innerHTML = "0"
+    resultDisplay.innerHTML = ""
 }
 
 for (let i = 0; i < btn.length; i++) {
