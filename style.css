@@ -38,7 +38,7 @@ body {
     padding: 20px;
 }
 
-#operation-display {
+#calc-display {
     flex: 1;
     width: 100%;
     color: #FFFFFF;
